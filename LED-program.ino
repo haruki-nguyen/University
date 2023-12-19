@@ -160,16 +160,20 @@ void randRain()
     }
 
     // start raining
+    // send 0 signal
     for (int j = 0; j < numberOfRandCols; j++)
     {
       digitalWrite(columns[randCols[j]], LOW);
     }
+    // control LEDs on layers
     for (int j = 3; j >= 0; j--)
     {
       digitalWrite(layers[j], HIGH);
+      // delay time is smaller on each loop
       delay(delay100 + (30 * j));
       digitalWrite(layers[j], LOW);
     }
+    // send 1 signal
     for (int j = 0; j < numberOfRandCols; j++)
     {
       digitalWrite(columns[randCols[j]], HIGH);
