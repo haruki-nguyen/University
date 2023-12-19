@@ -39,20 +39,21 @@ void setup()
 // things to do on looping
 void loop()
 {
+  turnOn();
   // flicker mode
-  flicker();
+  // flicker();
 
-  // light each layer up and down on order
-  layerUpDown();
+  // // light each layer up and down on order
+  // layerUpDown();
 
-  // light each layer up and down but faster
-  layerUpDownFaster();
+  // // light each layer up and down but faster
+  // layerUpDownFaster();
 
-  // raining effect
-  randRain();
+  // // raining effect
+  // randRain();
 
-  // spiral effect
-  spiralInAndOut();
+  // // spiral effect
+  // spiralInAndOut();
 
   // turnOnAndOffAllByColumnSideways();
 }
