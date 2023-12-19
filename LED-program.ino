@@ -160,19 +160,19 @@ void randRain()
     }
 
     // start raining
-    for (int i = 0; i < numberOfRandCols; i++)
+    for (int j = 0; j < numberOfRandCols; j++)
     {
-      digitalWrite(columns[randCols[i]], LOW);
+      digitalWrite(columns[randCols[j]], LOW);
     }
-    for (int i = 3; i >= 0; i--)
+    for (int j = 3; j >= 0; j--)
     {
-      digitalWrite(layers[i], HIGH);
-      delay(delay100 + (30 * i));
-      digitalWrite(layers[i], LOW);
+      digitalWrite(layers[j], HIGH);
+      delay(delay100 + (30 * j));
+      digitalWrite(layers[j], LOW);
     }
-    for (int i = 0; i < numberOfRandCols; i++)
+    for (int j = 0; j < numberOfRandCols; j++)
     {
-      digitalWrite(columns[randCols[i]], HIGH);
+      digitalWrite(columns[randCols[j]], HIGH);
     }
   }
 }
