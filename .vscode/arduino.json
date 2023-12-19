@@ -1,6 +1,5 @@
 {
-    "board": "arduino:avr:nano",
-    "configuration": "cpu=atmega328",
+    "board": "arduino:avr:uno",
     "sketch": "LED-program.ino",
     "port": "COM5"
 }
