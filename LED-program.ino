@@ -53,9 +53,6 @@ void loop()
 
   // raining effect
   randRain();
-
-
-  // turnOnAndOffAllByColumnSideways();
 }
 
 // turn all on
@@ -211,42 +208,6 @@ void spiralInAndOut()
     for (int j = 0; j < columnsLength; j++)
     {
       digitalWrite(columns[spiralOutClockwiseOrder[j]], LOW);
-      delay(delay100);
-    }
-  }
-}
-
-// turn everything on and off by column sideways
-void turnOnAndOffAllByColumnSideways()
-{
-  turnOff();
-
-  // Define column ranges
-  int columnRanges[][2] = {{0, 3}, {4, 7}, {8, 11}, {12, 15}};
-
-  // Turn on layers
-  for (int layer = 0; layer < layersLength; layer++)
-  {
-    digitalWrite(layers[layer], HIGH);
-  }
-
-  // Iterate over column ranges
-  for (int rangeIndex = 0; rangeIndex < 4; rangeIndex++)
-  {
-    int startColumn = columnRanges[rangeIndex][0];
-    int endColumn = columnRanges[rangeIndex][1];
-
-    // Turn on
-    for (int i = startColumn; i <= endColumn; i++)
-    {
-      digitalWrite(columns[i], LOW);
-      delay(delay100);
-    }
-
-    // Turn off
-    for (int i = endColumn; i >= startColumn; i--)
-    {
-      digitalWrite(columns[i], HIGH);
       delay(delay100);
     }
   }
