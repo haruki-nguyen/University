@@ -149,7 +149,7 @@ void randRain()
 {
   turnOff();
 
-  for (int i = 0; i < 30; i++)
+  for (int i = 0; i < 60; i++)
   {
     // generate random columns to rain
     const int numberOfRandCols = 6;
