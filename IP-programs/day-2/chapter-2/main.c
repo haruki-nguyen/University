@@ -1,3 +1,5 @@
+#include "header-files/switch-functions.h"
+
 int main() {
   //    upDownCase();
   //    lackingIfStatement();

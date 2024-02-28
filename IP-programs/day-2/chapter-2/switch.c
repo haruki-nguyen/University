@@ -1,3 +1,4 @@
+#include "header-files/switch-functions.h"
 #include <stdio.h>
 
 int lackSwitch() {
