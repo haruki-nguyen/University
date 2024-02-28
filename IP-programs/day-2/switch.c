@@ -17,6 +17,7 @@ int lackSwitch() {
     printf("Ba\n");
     break;
   }
+  return 0;
 }
 
 int fullfilSwitch() {
@@ -38,6 +39,7 @@ int fullfilSwitch() {
   default:
     printf("Khong doc duoc: %d", a);
   }
+  return 0;
 }
 
 int combinedSwitch() {
@@ -71,4 +73,5 @@ int combinedSwitch() {
   default:
     printf("Khong the doc\n");
   }
+  return 0;
 }

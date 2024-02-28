@@ -14,4 +14,5 @@ int firstDegreeEq() {
   } else {
     printf("Nghiem la: %.2f", -b / a);
   }
+  return 0;
 }

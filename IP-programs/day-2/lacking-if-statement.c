@@ -9,4 +9,5 @@ int lackingIfStatement() {
     printf("a bang 0");
   }
   //    a = 3;
+  return 0;
 }
