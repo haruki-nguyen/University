@@ -1,14 +1,12 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int lackingIfStatement()
-{
-    int a;
-//    int a = 1;
+int lackingIfStatement() {
+  int a;
+  //    int a = 1;
 
-    if (a == 0)
-    {
-        a = 3;
-        printf("a bang 0");
-    }
-//    a = 3;
+  if (a == 0) {
+    a = 3;
+    printf("a bang 0");
+  }
+  //    a = 3;
 }

@@ -1,21 +1,20 @@
-#include<stdio.h>
-#include<math.h>
+#include <math.h>
+#include <stdio.h>
 
 int subFirstDegreeEq(float a, float b) {
-    if (a == 0) {
-        if (b == 0) {
-            printf("Vo so nghiem");
-        } else {
-            printf("Vo nghiem");
-        }
+  if (a == 0) {
+    if (b == 0) {
+      printf("Vo so nghiem");
     } else {
-        printf("Nghiem la: %.2f", -b / a);
+      printf("Vo nghiem");
     }
+  } else {
+    printf("Nghiem la: %.2f", -b / a);
+  }
   return 0;
 }
 
-int quaratic()
-{
+int quaratic() {
   float a, b, c, delta;
   printf("nhap a, b va c: ");
   scanf("%f %f %f", &a, &b, &c);
@@ -26,8 +25,7 @@ int quaratic()
   } else {
     delta = (b * b) - (4 * a * c);
 
-    if (delta < 0)
-    {
+    if (delta < 0) {
       printf("vo nghiem\n");
     } else {
       if (delta == 0) {
