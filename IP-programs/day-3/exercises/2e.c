@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int factorial(int n) {
+  // does not check 0
   if (n == 1) {
     return 1;
   } else {
