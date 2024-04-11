@@ -1,6 +1,8 @@
 #include <math.h>
 #include <stdio.h>
 
+// Use `-lm` tag when running using `gcc`
+
 char toLowerCase(char c);
 float firstDegreeEq(float a, float b);
 float quaratic(float a, float b, float c, float delta);
