@@ -65,4 +65,3 @@ if ((a + b) > c) and ((a + c) > b) and ((b + c) > a):
     print("Day la tam giac")
 else:
     print("Khong la tam giac")
-
