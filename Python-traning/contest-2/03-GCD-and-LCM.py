@@ -1,15 +1,17 @@
 # Greatest common divider
-a = int(input())
-b = int(input())
+x, y = map(int, input().split())
+a = x
+b = y
 
-while a % b != 0:
-    r = a % b
-    a = b
-    b = r
+while x % y != 0:
+    r = x % y
+    x = y
+    y = r
 
-GCD = b
+gcd = y
 
 # Least common multiplier
-LCM = int(abs(a * b)/GCD)
+lcm = abs(a * b) // gcd
 
-print(GCD, LCM) 
+print(gcd, end = " ")
+print(lcm, end = " ") 
