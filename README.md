@@ -2,5 +2,5 @@
 
 - [LED Cube project](./LED-cube-programs/README.md).
 - [Introducing to Programming](./IP-programs/README.md).
-- [Python Training](./Python-Traning/README.md).
+- [Python Resources](./Python/README.md).
 
